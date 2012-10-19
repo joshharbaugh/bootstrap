@@ -44,8 +44,11 @@
 
 // Typography
 // -------------------------
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
 @sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@serifFontFamily:       "Droid Serif", Georgia, "Times New Roman", serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
@@ -53,9 +56,11 @@
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsFontFamily:    "Healvetica Neue", Helvetica, Arial, sans-serif;
+@headingsFontWeight:    bold;
+@headingsTextTransform: normal;
+@headingsLetterSpacing: -0.065em;
+@headingsColor:         @gray; // empty to use BS default, @textColor
 
 // Tables
 // -------------------------
@@ -105,11 +110,11 @@
 @dropdownDividerBottom:         @white;
 
 @dropdownLinkColor:             @grayDark;
-@dropdownLinkColorHover:        @white;
+@dropdownLinkColorHover:        @grayDark;
 @dropdownLinkColorActive:       @dropdownLinkColor;
 
-@dropdownLinkBackgroundActive:  @linkColor;
-@dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
+@dropdownLinkBackgroundActive:  @grayLighter;
+@dropdownLinkBackgroundHover:   @grayLighter;
 
 
 
@@ -132,6 +137,10 @@
 // -------------------------
 @iconSpritePath:          "../img/glyphicons-halflings.png";
 @iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+
+// Checkbox switch sprite path
+// -------------------------
+@switchSpritePath:        "../img/switch-button-slider-default.png";
 
 
 // Input placeholder text color

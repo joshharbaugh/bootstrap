@@ -59,7 +59,6 @@
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
-  margin-left: 0;
      -webkit-border-top-left-radius: 4px;
          -moz-border-radius-topleft: 4px;
              border-top-left-radius: 4px;
@@ -152,7 +151,8 @@
 
   // Keep the hover's background when dropdown is open
   .btn.dropdown-toggle {
-    background-color: @btnBackgroundHighlight;
+    background-color: @btnDangerBackgroundHighlight;
+    border-color: @grayDarker;
   }
   .btn-primary.dropdown-toggle {
     background-color: @btnPrimaryBackgroundHighlight;
